@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat";
+  background-color: #e2eaff;
+  color: #101632dd;
+}
+
+div,
+ul,
+nav,
+header,
+footer,
+a,
+li,
+label,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__open-nav-button {
+  color: #48e;
+  font-size: 3rem;
+  font-weight: 700;
+  position: absolute;
+  right: 10px;
+}
+
+.header__checkbox {
+  display: none;
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__checkbox:checked ~ .header__nav {
+  display: none;
+}
+
+.header__logo {
+  max-width: 100%;
+  width: 64px;
+  margin: 10px 20px;
+}
