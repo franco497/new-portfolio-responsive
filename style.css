@@ -31,6 +31,7 @@ label {
   container-type: inline-size;
   container-name: header;
   position: relative; /* Añadido para mejor control de posicionamiento */
+  font-size: 20px;
 }
 
 .header__open-nav-button {
@@ -158,6 +159,7 @@ label {
   justify-content: center;
   background-color: #fff;
   max-width: 1400px;
+  font-size: 18px;
 }
 
 .profile__data-container {
@@ -198,6 +200,7 @@ h2 {
     background-color: transparent;
     height: 90vh;
     margin: auto;
+    font-size: 18px;
   }
 
   .profile__data-container {
@@ -229,3 +232,49 @@ h2 {
     width: 620px;
   }
 }
+
+/*------------------PROFILE ENDS------------------*/
+
+/*------------------PORTFOLIO SECCION------------------*/
+
+.portfolio {
+  background-color: #18233f;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.portfolio__title {
+  font-size: 3rem;
+}
+
+.portfolio__project-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 1300px;
+  margin: auto;
+  width: 100%;
+  gap: 12px;
+  padding: 12px;
+  min-height: 90vh;
+}
+
+.portfolio__project {
+  background-image:
+    linear-gradient(#0009, #0009), url("Seguridad-informatica.jpg");
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+}
+
+.portfolio__project:hover {
+  opacity: 0.74;
+  outline: 2px solid #fff6;
+}
+
+/*------------------PORTFOLIO QUERIES------------------*/
+
+/*------------------PORTFOLIO ENDS------------------*/
