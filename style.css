@@ -32,6 +32,7 @@ label {
   container-name: header;
   position: relative; /* Añadido para mejor control de posicionamiento */
   font-size: 20px;
+  text-align: center;
 }
 
 .header__open-nav-button {
@@ -108,7 +109,7 @@ label {
     height: auto;
     width: auto;
     gap: 20px;
-    margin: 0; /* Reset del margin */
+    margin: 0; /* Reset del margen */
   }
 
   .header__open-nav-button {
@@ -235,9 +236,9 @@ h2 {
 
 /*------------------PROFILE ENDS------------------*/
 
-/*------------------PORTFOLIO SECCION------------------*/
+/*------------------CERTIFICATES SECCION------------------*/
 
-.portfolio {
+.certificates {
   background-color: #18233f;
   color: #fff;
   min-height: 100vh;
@@ -246,11 +247,39 @@ h2 {
   text-align: center;
 }
 
-.portfolio__title {
-  font-size: 3rem;
+.certificate__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 13000px;
+  margin: auto;
 }
 
-.portfolio__project-container {
+
+
+/*------------------CERTIFICATES QUERIES------------------*/
+
+/*------------------CERTIFICATES ENDS------------------*/
+
+/*------------------PROJECTS SECCION------------------*/
+
+.projects {
+  background-color: #18233f;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  container-name: projects;
+  container-type: inline-size;
+  justify-content: space-evenly;
+}
+
+.projects__title {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.projects__container {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1300px;
@@ -258,10 +287,10 @@ h2 {
   width: 100%;
   gap: 12px;
   padding: 12px;
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
-.portfolio__project {
+.projects__project {
   background-image:
     linear-gradient(#0009, #0009), url("Seguridad-informatica.jpg");
   background-position: center;
@@ -270,11 +299,40 @@ h2 {
   place-content: center;
 }
 
-.portfolio__project:hover {
+.projects__project:hover {
   opacity: 0.74;
   outline: 2px solid #fff6;
 }
 
-/*------------------PORTFOLIO QUERIES------------------*/
+/*------------------PROJECTS QUERIES------------------*/
 
-/*------------------PORTFOLIO ENDS------------------*/
+@container projects (min-width: 56.25rem) {
+  .projects__container {
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  }
+
+  .projects__project:first-child {
+    grid-column: span 2;
+  }
+
+  .projects__project:nth-child(6) {
+    grid-column: span 2;
+  }
+}
+
+@container projects (min-width: 81.25rem) {
+  .projects__container {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .projects__project:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .projects__project:nth-child(6) {
+    grid-column: span 4;
+  }
+}
+
+/*------------------PROJECTS ENDS------------------*/
