@@ -238,7 +238,7 @@ h2 {
 
 /*------------------CERTIFICATES SECCION------------------*/
 
-.certificates {
+/* .certificates {
   background-color: #18233f;
   color: #fff;
   min-height: 100vh;
@@ -253,8 +253,48 @@ h2 {
   max-width: 13000px;
   margin: auto;
 }
+ */
 
+.portfolio__2 {
+  background-color: #18233f;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  container-name: portfolio__2;
+  container-type: inline-size;
+}
 
+.portfolio__title__2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.portfolio__projects-container__2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 13000px;
+  margin: auto;
+  width: 100%;
+  gap: 12px;
+  padding: 12px;
+  min-height: 90vh;
+}
+
+.portfolio__project__2 {
+  background-image:
+    linear-gradient(#0009, #0009), url("Seguridad-informatica.jpg");
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  place-content: center;
+}
+
+.portfolio__project__2:hover {
+  opacity: 0.74;
+  outline: 2px solid #fff6;
+}
 
 /*------------------CERTIFICATES QUERIES------------------*/
 
@@ -336,3 +376,15 @@ h2 {
 }
 
 /*------------------PROJECTS ENDS------------------*/
+
+/*------------------FIX TEXTOS BLANCOS EN SECCIONES------------------*/
+.portfolio__2 h2,
+.portfolio__2 p,
+.portfolio__2 .portfolio__title__2,
+.portfolio__2 .portfolio__project-name__2,
+.projects h2,
+.projects p,
+.projects .projects__title,
+.projects .projects__project-name {
+  color: #fff; /* Blanco directo */
+}
