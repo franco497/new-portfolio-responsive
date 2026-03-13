@@ -261,9 +261,8 @@ h2 {
   max-width: 1300px;
   margin: auto;
   width: 100%;
-  gap: 12px;
-  padding: 12px;
-  min-height: 80vh;
+  gap: 20px;
+  padding: 20px;
 }
 
 .portfolio__project__2 {
@@ -281,11 +280,12 @@ h2 {
 }
 
 /*------------------CERTIFICATES QUERIES------------------*/
+@container projects (min-width: 1300px) {
 
-@container portfolio__2 (min-width: 81.25rem) {
   .portfolio__projects-container__2 {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: 1fr 1fr;
   }
+
 }
 
 /*------------------CERTIFICATES ENDS------------------*/
