@@ -238,24 +238,30 @@ h2 {
 
 /*------------------CERTIFICATES SECCION------------------*/
 
-.portfolio__2 {
+.certificate {
   background-color: #18233f;
   color: #fff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   text-align: center;
-  container-name: projects;
+  container-name: certificates;
   container-type: inline-size;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 40px 0;
 }
 
-.portfolio__title__2 {
-  font-size: 3rem;
-  margin-bottom: 0;
+.certificate__title {
+  font-size: 2rem;
+  margin: 20px 0;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
 }
 
-.portfolio__projects-container__2 {
+.certificate__container {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1300px;
@@ -265,27 +271,37 @@ h2 {
   padding: 20px;
 }
 
-.portfolio__project__2 {
+.downloadable__certificates {
   background-image:
     linear-gradient(#0009, #0009), url("Seguridad-informatica.jpg");
   background-position: center;
   background-size: cover;
   display: grid;
   place-content: center;
+  /* min-height: 140px; */
 }
 
-.portfolio__project__2:hover {
+.downloadable__certificates:hover {
   opacity: 0.74;
   outline: 2px solid #fff6;
 }
 
-/*------------------CERTIFICATES QUERIES------------------*/
-@container projects (min-width: 1300px) {
+.downloadable__certificates-title {
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  font-size: 1.2rem;
+}
 
-  .portfolio__projects-container__2 {
+/*------------------CERTIFICATES QUERIES------------------*/
+@container certificates (min-width: 81.25rem) {
+  .certificate__container {
     grid-template-columns: 1fr 1fr;
   }
 
+  .downloadable__certificates {
+    min-height: 140px;
+  }
 }
 
 /*------------------CERTIFICATES ENDS------------------*/
@@ -305,8 +321,9 @@ h2 {
 }
 
 .projects__title {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0;
+  color: #fff;
 }
 
 .projects__container {
@@ -332,6 +349,10 @@ h2 {
 .projects__project:hover {
   opacity: 0.74;
   outline: 2px solid #fff6;
+}
+
+.projects__project-name {
+  color: #fff;
 }
 
 /*------------------PROJECTS QUERIES------------------*/
@@ -368,13 +389,4 @@ h2 {
 /*------------------PROJECTS ENDS------------------*/
 
 /*------------------FIX TEXTOS BLANCOS EN SECCIONES------------------*/
-.portfolio__2 h2,
-.portfolio__2 p,
-.portfolio__2 .portfolio__title__2,
-.portfolio__2 .portfolio__project-name__2,
-.projects h2,
-.projects p,
-.projects .projects__title,
-.projects .projects__project-name {
-  color: #fff; /* Blanco directo */
-}
+/* Esta sección ya no es necesaria porque ahora cada elemento tiene su propio color definido */
