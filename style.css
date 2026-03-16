@@ -293,6 +293,18 @@ h2 {
   font-size: 1.2rem;
 }
 
+.certificate__link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.certificate__link:hover {
+  cursor: pointer;
+}
+
 /*------------------CERTIFICATES QUERIES------------------*/
 @container certificates (min-width: 81.25rem) {
   .certificate__container {
