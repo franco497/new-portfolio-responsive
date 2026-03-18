@@ -236,6 +236,141 @@ h2 {
 
 /*------------------PROFILE ENDS------------------*/
 
+/*------------------EXPERIENCE SECCION------------------*/
+
+.experience {
+  container-name: experience;
+  container-type: inline-size;
+}
+
+.experience__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  max-width: 1400px;
+}
+
+.experience__data-container {
+  max-width: 600px;
+  padding: 12px;
+}
+
+.experience__img-container {
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.experience__img {
+  max-width: 100%;
+  width: 720px;
+}
+
+h1 {
+  color: #26a;
+}
+
+.experience__skills-container h2 {
+  color: #26a;
+}
+
+.experience__skill {
+  list-style: none;
+  display: flex;
+  margin: 10px;
+  max-width: 600px;
+  margin-left: 0;
+  align-items: center;
+}
+
+.load-bar {
+  border: 2px solid #48e;
+  border-radius: 8px;
+  color: #fff;
+  padding: 2px;
+  font-size: 12px;
+  width: 80%;
+  margin: 4px;
+  margin-left: 0;
+}
+
+.experience__skill {
+  color: #48e;
+}
+
+.load-bar__bar {
+  background-color: #48e;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+
+.bar--80 {
+  width: 80%;
+}
+
+.bar--70 {
+  width: 70%;
+}
+
+.bar--60 {
+  width: 60%;
+}
+
+.bar--90 {
+  width: 90%;
+}
+
+/*------------------EXPERIENCE QUERIES------------------*/
+
+@container experience (min-width: 720px) {
+  .experience__wrapper {
+    flex-direction: row;
+    padding: 20px;
+    background-color: transparent;
+    height: 90vh;
+    margin: auto;
+  }
+
+  .experience__data-container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 0px 0px 9px #0002;
+  }
+
+  .experience__data-container-right {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 25px 0px 0px 25px;
+    box-shadow: 0px 0px 9px #0002;
+  }
+
+  h1 {
+    margin-top: 0;
+    font-size: 4rem;
+    text-wrap: balance;
+  }
+
+  .experience__data {
+    max-width: 620px;
+  }
+
+  /*   .experience__img-container {
+    max-height: initial;
+    border-radius: 25px 0px 0px 25px;
+  }
+
+  .experience__img {
+    height: 100%;
+    object-fit: cover;
+    width: 620px;
+  } */
+}
+
+/*------------------EXPERIENCE ENDS------------------*/
+
 /*------------------CERTIFICATES SECCION------------------*/
 
 .certificate {
