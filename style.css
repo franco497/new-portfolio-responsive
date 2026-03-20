@@ -241,6 +241,13 @@ h2 {
 .experience {
   container-name: experience;
   container-type: inline-size;
+  margin-bottom: 20px;
+}
+
+.certificate__title-experience {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #26a;
 }
 
 .experience__wrapper {
@@ -254,6 +261,13 @@ h2 {
 .experience__data-container {
   max-width: 600px;
   padding: 12px;
+  text-align: center; /* Centra el texto horizontalmente */
+}
+
+.experience__data-container-right {
+  max-width: 600px;
+  padding: 12px;
+  text-align: center; /* Centra el texto horizontalmente */
 }
 
 .experience__img-container {
