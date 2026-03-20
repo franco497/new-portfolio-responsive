@@ -248,6 +248,8 @@ h2 {
   text-align: center;
   font-size: 2.5rem;
   color: #26a;
+  padding: 0;
+  margin: 0;
 }
 
 .experience__wrapper {
@@ -256,6 +258,7 @@ h2 {
   justify-content: center;
   background-color: #fff;
   max-width: 1400px;
+  font-size: 17px;
 }
 
 .experience__data-container {
@@ -351,6 +354,7 @@ h1 {
     align-items: center;
     border-radius: 0px 25px 25px 0px;
     box-shadow: 0px 0px 9px #0002;
+    max-width: 615px;
   }
 
   .experience__data-container-right {
@@ -359,6 +363,7 @@ h1 {
     align-items: center;
     border-radius: 25px 0px 0px 25px;
     box-shadow: 0px 0px 9px #0002;
+    max-width: 615px;
   }
 
   h1 {
@@ -370,17 +375,6 @@ h1 {
   .experience__data {
     max-width: 620px;
   }
-
-  /*   .experience__img-container {
-    max-height: initial;
-    border-radius: 25px 0px 0px 25px;
-  }
-
-  .experience__img {
-    height: 100%;
-    object-fit: cover;
-    width: 620px;
-  } */
 }
 
 /*------------------EXPERIENCE ENDS------------------*/
