@@ -186,6 +186,10 @@ h2 {
   color: #48e;
 }
 
+.profile__description {
+  text-align: center;
+}
+
 .profile__experience {
   display: flex;
   list-style: none;
@@ -193,6 +197,22 @@ h2 {
 }
 
 /*------------------PROFILE QUERIES------------------*/
+
+@container profile (min-width:600px) {
+  .profile__wrapper {
+    justify-content: center;
+  }
+
+  .profile__data-container {
+    max-width: 720px;
+    margin: 12px;
+  }
+
+  h1 {
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 @container profile (min-width:720px) {
   .profile__wrapper {
@@ -210,6 +230,8 @@ h2 {
     align-items: center;
     border-radius: 0px 25px 25px 0px;
     box-shadow: 0px 0px 9px #0002;
+    max-width: 600px;
+    margin: 0;
   }
 
   h1 {
@@ -262,90 +284,80 @@ h2 {
 }
 
 .experience__data-container {
-  max-width: 600px;
   padding: 12px;
   text-align: center; /* Centra el texto horizontalmente */
 }
 
 .experience__data-container-right {
-  max-width: 600px;
   padding: 12px;
   text-align: center; /* Centra el texto horizontalmente */
-}
-
-.experience__img-container {
-  max-height: 500px;
-  overflow: hidden;
-}
-
-.experience__img {
-  max-width: 100%;
-  width: 720px;
 }
 
 h1 {
   color: #26a;
 }
 
-.experience__skills-container h2 {
-  color: #26a;
-}
-
-.experience__skill {
-  list-style: none;
-  display: flex;
-  margin: 10px;
-  max-width: 600px;
-  margin-left: 0;
-  align-items: center;
-}
-
-.load-bar {
-  border: 2px solid #48e;
-  border-radius: 8px;
-  color: #fff;
-  padding: 2px;
-  font-size: 12px;
-  width: 80%;
-  margin: 4px;
-  margin-left: 0;
-}
-
-.experience__skill {
-  color: #48e;
-}
-
-.load-bar__bar {
-  background-color: #48e;
-  border-radius: 4px;
-  padding: 4px 6px;
-}
-
-.bar--80 {
-  width: 80%;
-}
-
-.bar--70 {
-  width: 70%;
-}
-
-.bar--60 {
-  width: 60%;
-}
-
-.bar--90 {
-  width: 90%;
-}
-
 /*------------------EXPERIENCE QUERIES------------------*/
 
-@container experience (min-width: 720px) {
+@container experience (min-width: 600px) {
+  .experience__wrapper {
+    justify-content: center;
+  }
+}
+
+/* Container query para tablets (720px - 1199px) */
+@container experience (min-width: 720px) and (max-width: 1199px) {
+  .experience__wrapper {
+    flex-direction: row;
+    padding: 20px;
+    background-color: transparent;
+    margin: auto;
+    gap: 20px;
+  }
+
+  .experience__data-container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0px 0px 9px #0002;
+    max-width: 50%;
+    flex: 1;
+  }
+
+  .experience__data-container-right {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 0px 0px 9px #0002;
+    max-width: 50%;
+    flex: 1;
+  }
+
+  .experience__data {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .experience__description h2 {
+    font-size: 1.2rem;
+  }
+
+  .experience__skills-container {
+    text-align: left;
+  }
+}
+
+/* Container query para desktop grande (1200px en adelante) */
+@container experience (min-width: 1200px) {
   .experience__wrapper {
     flex-direction: row;
     padding: 20px;
     background-color: transparent;
     height: 90vh;
     margin: auto;
+    gap: 0;
   }
 
   .experience__data-container {
@@ -355,6 +367,7 @@ h1 {
     border-radius: 0px 25px 25px 0px;
     box-shadow: 0px 0px 9px #0002;
     max-width: 615px;
+    flex: 1;
   }
 
   .experience__data-container-right {
@@ -364,6 +377,7 @@ h1 {
     border-radius: 25px 0px 0px 25px;
     box-shadow: 0px 0px 9px #0002;
     max-width: 615px;
+    flex: 1;
   }
 
   h1 {
@@ -374,6 +388,45 @@ h1 {
 
   .experience__data {
     max-width: 620px;
+    padding: 20px;
+  }
+
+  .experience__description h2 {
+    font-size: 1.3rem;
+  }
+
+  .experience__skills-container {
+    text-align: left;
+  }
+}
+
+/* Fallback con media query para navegadores que no soporten container queries */
+@media screen and (min-width: 720px) and (max-width: 1199px) {
+  .experience__wrapper {
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .experience__data-container,
+  .experience__data-container-right {
+    max-width: 50%;
+    border-radius: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .experience__wrapper {
+    flex-direction: row;
+    height: 90vh;
+  }
+
+  .experience__data-container {
+    border-radius: 0px 25px 25px 0px;
+  }
+
+  .experience__data-container-right {
+    border-radius: 25px 0px 0px 25px;
   }
 }
 
@@ -421,7 +474,6 @@ h1 {
   background-size: cover;
   display: grid;
   place-content: center;
-  /* min-height: 140px; */
 }
 
 .downloadable__certificates:hover {
@@ -542,6 +594,3 @@ h1 {
 }
 
 /*------------------PROJECTS ENDS------------------*/
-
-/*------------------FIX TEXTOS BLANCOS EN SECCIONES------------------*/
-/* Esta sección ya no es necesaria porque ahora cada elemento tiene su propio color definido */
