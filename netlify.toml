@@ -1,0 +1,63 @@
+[build]
+publish = "."
+
+# Asegurar que todos los archivos estáticos se sirvan correctamente
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+force = false
+
+# Excluir archivos estáticos de la redirección SPA
+[[redirects]]
+from = "/certificados/*"
+to = "/certificados/:splat"
+status = 200
+
+[[redirects]]
+from = "/cv/*"
+to = "/cv/:splat"
+status = 200
+
+[[redirects]]
+from = "/*.png"
+to = "/:splat.png"
+status = 200
+
+[[redirects]]
+from = "/*.jpg"
+to = "/:splat.jpg"
+status = 200
+
+[[redirects]]
+from = "/*.jfif"
+to = "/:splat.jfif"
+status = 200
+
+[[redirects]]
+from = "/*.pdf"
+to = "/:splat.pdf"
+status = 200
+
+[[redirects]]
+from = "/*.css"
+to = "/:splat.css"
+status = 200
+
+# Headers para cache y tipos MIME
+[[headers]]
+for = "/*.pdf"
+[headers.values]
+Content-Type = "application/pdf"
+
+[[headers]]
+for = "/certificados/*.jpg"
+[headers.values]
+Content-Type = "image/jpeg"
+Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+for = "/cv/*.pdf"
+[headers.values]
+Content-Type = "application/pdf"
+Cache-Control = "public, max-age=31536000"
