@@ -622,15 +622,14 @@ h2 {
 }
 
 /*------------------PROJECTS ENDS------------------*/
-
-/*------------------FOOTER SECCION------------------*/
+/* -----------------------------FOOTER STYLES (VERSIÓN INTERMEDIA)----------------------------- */
 
 footer {
-  background: linear-gradient(to bottom, #1e2d52 0%, #18233f 50%, #121a30 100%);
+  background: linear-gradient(to bottom, #1e2d52 0%, #16203b 100%);
   color: #fffd;
   padding: 0;
   text-align: center;
-  font-size: 22px;
+  font-size: 0.9em;
   position: relative;
   margin-top: 0;
 }
@@ -640,35 +639,36 @@ footer {
   width: 100%;
 }
 
-/* Contenido del footer - Mobile First */
 .footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
-  padding: 2rem 1.5rem;
+  gap: 1.8em;
+  padding: 2em 1.5em;
   max-width: 1400px;
   margin: 0 auto;
 }
 
 .footer-name {
-  font-size: 1.375rem;
+  font-size: 1.2em;
   list-style: none;
   font-weight: 600;
   color: #fffd;
-  padding: 0.5rem 0;
+  padding: 0.25em 0;
   text-transform: uppercase;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.35em 0;
+  letter-spacing: 1px;
 }
 
 .footer-avatar {
-  width: 5rem;
-  height: 5rem;
+  width: 4.5em;
+  height: 4.5em;
   border-radius: 9999px;
   object-fit: cover;
-  margin: 1rem auto;
+  margin: 0.5em auto;
   display: block;
+  border: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 .footer-section {
@@ -677,20 +677,23 @@ footer {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 300px;
+  max-width: 320px;
 }
 
 .footer-section p {
-  /* font-size: 1rem; */
-  font-size: 1.125rem;
+  font-size: 0.9em;
   line-height: 1.5;
   margin: 0;
+  opacity: 0.9;
 }
 
 .contact-label {
-  font-size: 1rem;
-  margin: 1rem 0 0.5rem 0 !important;
+  font-size: 0.85em;
+  margin: 0.65em 0 0.3em 0 !important;
   font-weight: normal;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .contact-email {
@@ -698,78 +701,81 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  /*   font-size: 0.875rem; */
-  font-size: 1.125rem;
+  font-size: 0.9em;
   word-break: break-all;
-  margin: 0.5rem auto;
+  margin: 0.4em auto;
   text-align: center;
 }
 
-/* Links */
 .footer-link {
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.75rem;
-  margin: 1rem 0;
+  gap: 1em;
+  margin: 0.65em 0;
 }
 
 .footer-link a {
   color: #fffd;
   text-decoration: none;
-  transition: all 0.15s ease-in-out;
-  /* font-size: 1rem; */
-  font-size: 1.125rem;
+  transition: all 0.2s ease;
+  font-size: 0.9em;
+  opacity: 0.85;
 }
 
 .footer-link a:hover {
   color: #fffd;
-  transform: scale(1.5);
-  display: inline-block;
+  opacity: 1;
+  transform: translateY(-2px);
 }
 
 .footer-icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.1em;
+  height: 1.1em;
   stroke: currentColor;
 }
 
-/* Copyright */
 .footer-copyright {
   text-align: center;
-  padding: 1.5rem 0 2rem 0;
-  /*   font-size: 0.875rem; */
-  font-size: 1.125rem;
+  padding: 1.2em 0 1.2em 0;
+  font-size: 0.75em;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: 1rem;
+  margin-top: 0.5em;
+  opacity: 0.7;
 }
 
-/* Tablet (pantallas medianas) */
-@media (min-width: 769px) {
+/* -----------------------------FOOTER QUERIES----------------------------- */
+
+@media (min-width: 640px) {
   .footer-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
-    padding: 3rem;
+    gap: 2em;
+    padding: 2.2em 2em;
   }
-
+  
   .footer-section {
     max-width: none;
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .footer-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* mantenés el layout tipo tablet */
-    gap: 4rem;
-
-    max-width: 1200px; /* 🔥 CLAVE */
-    margin: 0 auto; /* 🔥 centra */
-
-    padding: 4rem 2rem; /* padding más controlado */
+    gap: 3em;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2.5em 2em;
+  }
+  
+  .footer-avatar {
+    width: 5em;
+    height: 5em;
+  }
+  
+  .footer-name {
+    font-size: 1.3em;
   }
 }
 
-/*------------------FOOTER ENDS------------------*/
+/* -----------------------------FOOTER ENDS----------------------------- */
