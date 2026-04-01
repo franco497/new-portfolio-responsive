@@ -180,6 +180,7 @@ label {
 
 h1 {
   color: #26a;
+  font-size: 1.5em;
 }
 
 h2 {
@@ -194,6 +195,10 @@ h2 {
   display: flex;
   list-style: none;
   flex-direction: column;
+}
+
+.profile__description-text {
+  font-size: 1em;
 }
 
 /*------------------PROFILE QUERIES------------------*/
