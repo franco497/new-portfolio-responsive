@@ -273,7 +273,7 @@ h2 {
 
 .certificate__title-experience {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 1.75em;
   color: #26a;
   padding: 0;
   margin: 0;
@@ -288,6 +288,10 @@ h2 {
   font-size: 17px;
 }
 
+.experience__description-title {
+  font-size: 1.25em;
+}
+
 .experience__data-container {
   padding: 12px;
   text-align: center; /* Centra el texto horizontalmente */
@@ -298,9 +302,9 @@ h2 {
   text-align: center; /* Centra el texto horizontalmente */
 }
 
-h1 {
+/* h1 {
   color: #26a;
-}
+} */
 
 /*------------------EXPERIENCE QUERIES------------------*/
 
@@ -454,7 +458,7 @@ h1 {
 }
 
 .certificate__title {
-  font-size: 2rem;
+  font-size: 1.75em;
   margin: 20px 0;
   max-width: 1300px;
   margin-left: auto;
@@ -533,7 +537,7 @@ h1 {
 }
 
 .projects__title {
-  font-size: 2rem;
+  font-size: 1.75em;
   margin-bottom: 0;
   color: #fff;
 }
@@ -565,6 +569,7 @@ h1 {
 
 .projects__project-name {
   color: #fff;
+  font-size: 1.2em;
 }
 
 /* Hace que el enlace ocupe toda la tarjeta del proyecto */
