@@ -484,7 +484,8 @@ h2 {
   display: grid;
   place-content: center;
   /* Eliminamos altura fija para que sea flexible */
-  min-height: 88px; /* Altura mínima para mantener consistencia */
+  /* min-height: 88px; */ /* Altura mínima para mantener consistencia */
+  height: 88px; /* Altura fija para igualdad */
 }
 
 .downloadable__certificates:hover {
