@@ -483,6 +483,8 @@ h2 {
   background-size: cover;
   display: grid;
   place-content: center;
+  /* Eliminamos altura fija para que sea flexible */
+  min-height: 88px; /* Altura mínima para mantener consistencia */
 }
 
 .downloadable__certificates:hover {
@@ -754,7 +756,7 @@ footer {
     gap: 2em;
     padding: 2.2em 2em;
   }
-  
+
   .footer-section {
     max-width: none;
   }
@@ -767,12 +769,12 @@ footer {
     margin: 0 auto;
     padding: 2.5em 2em;
   }
-  
+
   .footer-avatar {
     width: 5em;
     height: 5em;
   }
-  
+
   .footer-name {
     font-size: 1.3em;
   }
