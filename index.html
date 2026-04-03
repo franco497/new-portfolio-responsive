@@ -60,8 +60,8 @@
         </div>
       </div>
     </main>
-    <h2 class="certificate__title-experience">Experiencia</h2>
-    <section class="experience" id="experience">
+    <h2 class="certificate__title-experience" id="experience">Experiencia</h2>
+    <section class="experience">
       <div class="experience__wrapper">
         <div class="experience__data-container-right">
           <div class="experience__data">
@@ -145,6 +145,7 @@
     </section>
 
     <section class="certificate" id="certificate">
+      <div class="certificate__inner"></div>
       <h2 class="certificate__title">Certificados</h2>
 
       <div class="certificate__container">
@@ -206,6 +207,7 @@
           </a>
         </div>
       </div>
+       </div>
     </section>
 
     <section class="projects" id="projects">
@@ -325,3 +327,14 @@
     </footer>
   </body>
 </html>
+
+<script>
+  const links = document.querySelectorAll('.header__nav a');
+  const checkbox = document.querySelector('#menu-toggle');
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      checkbox.checked = false;
+    });
+  });
+</script>

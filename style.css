@@ -459,21 +459,22 @@ h2 {
 
 .certificate__title {
   font-size: 1.75em;
-  margin: 20px 0;
+  margin: 20px auto;
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
+  padding: 0 12px;
 }
 
 .certificate__container {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1300px;
-  margin: auto;
+  margin: 0 auto;
   width: 100%;
   gap: 20px;
-  padding: 20px;
+  padding: 12px;
 }
 
 .downloadable__certificates {
@@ -539,6 +540,12 @@ h2 {
   justify-content: space-evenly;
 }
 
+.certificate__inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 .projects__title {
   font-size: 1.75em;
   margin-bottom: 0;
@@ -548,6 +555,8 @@ h2 {
 .projects__container {
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-rows: 1fr; 
+  min-height: 40vh; 
   max-width: 1300px;
   margin: auto;
   width: 100%;
@@ -625,6 +634,7 @@ h2 {
 }
 
 /*------------------PROJECTS ENDS------------------*/
+
 /* -----------------------------FOOTER STYLES (VERSIÓN INTERMEDIA)----------------------------- */
 
 footer {
