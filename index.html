@@ -9,13 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <!-- <input type="checkbox" class="header__checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="header__open-nav-button" role="button">
-        =
-      </label> -->
-
       <button class="header__open-nav-button" id="menuToggle" aria-label="Menú">
-       ☰
       </button>
 
       <div class="header__logo-container">
@@ -334,51 +328,4 @@
   </body>
 </html>
 
-<script>
-// Toggle del menú hamburguesa
-const menuToggle = document.getElementById('menuToggle');
-const mainNav = document.getElementById('mainNav');
-const navLinks = document.querySelectorAll('.header__nav a');
-
-// Función para abrir/cerrar menú
-function toggleMenu() {
-  mainNav.classList.toggle('header__nav--open');
-  
-  // Cambiar ícono (opcional)
-  if (mainNav.classList.contains('header__nav--open')) {
-    menuToggle.textContent = '✕'; // Cambia a "X"
-    menuToggle.setAttribute('aria-label', 'Cerrar menú');
-  } else {
-    menuToggle.textContent = '☰'; // Vuelve a hamburguesa
-    menuToggle.setAttribute('aria-label', 'Abrir menú');
-  }
-}
-
-// Evento click en el botón
-menuToggle.addEventListener('click', toggleMenu);
-
-// Cerrar menú al hacer click en un enlace
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    mainNav.classList.remove('header__nav--open');
-    menuToggle.textContent = '☰';
-    menuToggle.setAttribute('aria-label', 'Abrir menú');
-  });
-});
-
-// Cerrar menú al hacer click fuera (mejora UX)
-document.addEventListener('click', (event) => {
-  const isClickInsideMenu = mainNav.contains(event.target);
-  const isClickOnToggle = menuToggle.contains(event.target);
-  
-  if (!isClickInsideMenu && !isClickOnToggle && mainNav.classList.contains('header__nav--open')) {
-    mainNav.classList.remove('header__nav--open');
-    menuToggle.textContent = '☰';
-  }
-});
-
-// Prevenir que el click dentro del menú lo cierre
-mainNav.addEventListener('click', (event) => {
-  event.stopPropagation();
-});
-</script>
+<script src="js/bnt-mobile.js"></script>
