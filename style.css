@@ -31,7 +31,7 @@ label {
   container-type: inline-size;
   container-name: header;
   position: relative;
-  font-size: 16px; /* Cambiado de 20px a 16px para que sea más obvio el cambio */
+  font-size: 20px; /* Cambiado de 20px a 16px para que sea más obvio el cambio */
   text-align: center;
 }
 
@@ -158,7 +158,7 @@ label {
 }
 
 /* Media Query para móviles de 361px a 640px */
-@media screen and (min-width: 361px) and (max-width: 640px) {
+@media screen and (min-width: 361px) and (max-width: 680px) {
   .header__nav-list {
     height: 40vh;
     justify-content: space-evenly;
