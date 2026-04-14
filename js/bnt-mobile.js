@@ -58,3 +58,26 @@ document.addEventListener("click", (event) => {
 mainNav.addEventListener("click", (event) => {
   event.stopPropagation();
 });
+
+// Función para manejar el resize
+function handleResize() {
+  const isDesktop = window.innerWidth >= 680; // Mismo breakpoint que tu CSS
+
+  if (isDesktop && mainNav.classList.contains("header__nav--open")) {
+    // Si estamos en desktop y el menú móvil está "abierto" (por estado JS)
+    // forzamos el cierre limpio
+    mainNav.classList.remove("header__nav--open");
+    menuToggle.classList.remove("active");
+    document.body.style.overflow = "";
+    menuToggle.setAttribute("aria-label", "Abrir menú");
+  } else if (isDesktop) {
+    // Aseguramos que si estamos en desktop, no haya overflow hidden
+    document.body.style.overflow = "";
+  }
+}
+
+// Escuchar cambios de tamaño
+window.addEventListener("resize", handleResize);
+
+// También ejecutar al cargar por si acaso
+handleResize();
