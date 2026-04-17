@@ -428,7 +428,7 @@ h2 {
     flex-direction: row;
     padding: 20px;
     background-color: transparent;
-    height: 90vh;
+    /* height: 90vh; */
     margin: auto;
     gap: 0;
   }
@@ -489,7 +489,7 @@ h2 {
 @media screen and (min-width: 1200px) {
   .experience__wrapper {
     flex-direction: row;
-    height: 90vh;
+    /* height: 90vh; */
   }
 
   .experience__data-container {
