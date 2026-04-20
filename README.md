@@ -7,6 +7,7 @@ Portafolio profesional de **Programador Full Stack** con experiencia en desarrol
 
 ## ✨ Características
 
+- **Patrón Mobile First** – Desarrollo priorizando móviles para máxima velocidad y usabilidad.
 - **Diseño completamente responsive** – Adaptado a móviles, tablets y escritorio usando Container Queries y Media Queries.
 - **Navegación fluida** – Menú hamburguesa en móvil y barra de navegación horizontal en desktop.
 - **Secciones claras** – Sobre mí, experiencia laboral, certificados, proyectos destacados y contacto.
@@ -29,4 +30,5 @@ Portafolio profesional de **Programador Full Stack** con experiencia en desarrol
 ├── style.css
 ├── netlify.toml
 ├── cv/ # CV y foto de perfil
+├── js/ btn-mobile.js
 └── certificados/ # Certificaciones descargables
