@@ -112,84 +112,172 @@
     <h2 class="certificate__title-experience" id="experience">Experiencia</h2>
     <section class="experience">
       <div class="experience__wrapper">
-        <div class="experience__data-container-right">
-          <div class="experience__data">
-            <div class="experience__description">
-              <h2 class="experience__description-title">
-                Febrero 2025 - Junio 2026 Mantenimiento de sistema CRM (Customer
-                Relationship Management) - Freelancer
-              </h2>
-              <p>
-                Mantenimiento y desarrollo de nuevas funcionalidades en un
-                sistema CRM empresarial.
-              </p>
-            </div>
-            <div class="experience__skills-container">
-              <h3>Stack tecnológico</h3>
-              🚀 <strong>Backend:</strong> Node.js + Express 4.16
-              <strong>Base de Datos:</strong> MySQL (20 tablas relacionadas)
-              <strong>Almacenamiento:</strong> Google Cloud Storage + Multer
-              <strong>Procesamiento de Imágenes:</strong> Sharp Autenticación:
-              bcryptjs + express-session <strong>Validación:</strong> Joi
-              <strong>Emails:</strong> Nodemailer + Resend
-              <strong>Tareas Programadas:</strong> node-cron
-              <strong>Template Engine:</strong> Handlebars (HBS)
-              <strong>Variables de Entorno:</strong> dotenv Logging: Morgan +
-              Debug
+        <!-- 1️⃣ PARRILLA (Junio 2026 - Presente) -->
+        <article class="experience__card experience__card--featured">
+          <header class="experience__card-header">
+            <span class="experience__card-date">Junio 2026 - Presente</span>
+            <h3 class="experience__card-title">
+              Sistema de Administración de Salón para Parrilla
+            </h3>
+            <span class="experience__card-company">
+              Freelancer · Cliente particular
+            </span>
+          </header>
 
-              <h3>🛠️ Características Principales</h3>
-              Arquitectura MVC con API RESTful, Manejo de archivos multimedia en
-              la nube Sistema de autenticación seguro, Tareas automatizadas y
-              notificaciones por email, Validación robusta de datos Logging y
-              monitoreo de actividades.
-              <p></p>
-            </div>
-          </div>
-        </div>
-        <div class="experience__data-container">
-          <div class="experience__data">
-            <div class="experience__description">
-              <h2 class="experience__description-title">
-                Julio-2024 Simulación laboral en No-Country Desarrollo de
-                Sistema de Gestión para Clínica de Salud
-              </h2>
-            </div>
-            <div class="experience__skills-container">
-              <h3>Stack Tecnológico</h3>
-              🚀 <strong>Backend: Framework Principal:</strong> Node.js +
-              Fastify <strong>Arquitectura:</strong>
-              Puertos y Adaptadores (Hexagonal) con Inyección de Dependencia
-              <strong>Base de Datos:</strong> MongoDB con Prisma ORM
-              <strong>Autenticación:</strong> JSON Web Tokens (JWT)
-              <strong>Validación:</strong> Validatorjs
-              <strong>Seguridad:</strong> CORS configurado con @fastify/cors
-              <strong>Variables de Entorno:</strong> dotenv
-              <strong>Calidad de Código:</strong> ESLint (Airbnb base style
-              guide) 🖥️ <strong>Frontend:Framework:</strong> React 18
-              <strong>Manejo de Estado:</strong> Redux Toolkit
-              <strong>Enrutamiento:</strong> React Router DOM v6
-              <strong>Peticiones HTTP:</strong> Axios
-              <strong>UI/UX:</strong> React Toastify (notificaciones) + React
-              Helmet (manejo del head) <strong>Construcción:</strong>
-              Vite
+          <p class="experience__card-summary">
+            Sistema web de gestión integral para un restaurante parrilla en
+            producción. Administra 47 mesas, reservas, mozos, pedidos y stock,
+            con generación automática de tickets térmicos y facturas, control de
+            estados en tiempo real y autenticación mediante Magic Links.
+          </p>
 
-              <h3>🛠️ Características Principales</h3>
-              <strong>Arquitectura Hexagonal (Puertos y Adaptadores):</strong>
-              Implementación de una arquitectura limpia y desacoplada que separa
-              la lógica de negocio de los frameworks y dependencias externas,
-              facilitando la mantenibilidad y testabilidad.
-              <strong>Inyección de Dependencia:</strong> Patrón de diseño
-              implementado para desacoplar componentes y facilitar el testing
-              unitario, permitiendo intercambiar implementaciones (repositorios,
-              servicios externos) sin modificar la lógica de negocio.
-              <strong>API Segura:</strong> Sistema de autenticación robusto
-              mediante JWT y control de acceso.
-              <strong>Base de Datos NoSQL:</strong>
-              Implementación con MongoDB para manejo flexible y escalable de
-              datos clínicos.
+          <ul class="experience__card-highlights">
+            <li>
+              47 mesas con estados dinámicos (disponible, ocupada, reservada)
+            </li>
+            <li>
+              Sistema de reservas con asignación a mesas y completado automático
+            </li>
+            <li>Generación de tickets térmicos 58mm y facturas A4 en PDF</li>
+            <li>Autenticación con Magic Links y Row Level Security (RLS)</li>
+            <li>Diseño Mobile First optimizado para tablets en salón</li>
+          </ul>
+
+          <details class="experience__card-details">
+            <summary class="experience__card-toggle">
+              Ver tecnologías utilizadas
+            </summary>
+            <div class="experience__card-tech">
+              <h4>Stack tecnológico</h4>
+              <ul>
+                <li><strong>Frontend:</strong> React 19 + Vite</li>
+                <li>
+                  <strong>Enrutamiento:</strong> React Router DOM (HashRouter)
+                </li>
+                <li>
+                  <strong>Base de Datos:</strong> PostgreSQL (Supabase) · 7
+                  tablas relacionales
+                </li>
+                <li><strong>Seguridad:</strong> Row Level Security (RLS)</li>
+                <li>
+                  <strong>Autenticación:</strong> Magic Links (Supabase Auth)
+                </li>
+                <li>
+                  <strong>Generación de PDF:</strong> jsPDF + jspdf-autotable
+                </li>
+                <li>
+                  <strong>Estilos:</strong> CSS3 con glassmorphism y responsive
+                </li>
+                <li>
+                  <strong>Hosting:</strong> Netlify con despliegue continuo
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
+          </details>
+        </article>
+
+        <!-- 2️⃣ CRM (Febrero 2025 - Junio 2026) -->
+        <article class="experience__card">
+          <header class="experience__card-header">
+            <span class="experience__card-date">Febrero 2025 - Junio 2026</span>
+            <h3 class="experience__card-title">Mantenimiento de sistema CRM</h3>
+            <span class="experience__card-company"> Freelancer · Empresa </span>
+          </header>
+
+          <p class="experience__card-summary">
+            Mantenimiento y desarrollo de nuevas funcionalidades en un sistema
+            CRM empresarial.
+          </p>
+
+          <ul class="experience__card-highlights">
+            <li>API REST bajo arquitectura MVC</li>
+            <li>Autenticación y gestión de sesiones</li>
+            <li>Procesamiento y almacenamiento de imágenes en la nube</li>
+            <li>Automatización de emails y tareas programadas</li>
+          </ul>
+
+          <details class="experience__card-details">
+            <summary class="experience__card-toggle">
+              Ver tecnologías utilizadas
+            </summary>
+            <div class="experience__card-tech">
+              <h4>Stack tecnológico</h4>
+              <ul>
+                <li><strong>Backend:</strong> Node.js + Express 4.16</li>
+                <li>
+                  <strong>Base de Datos:</strong> MySQL (20 tablas relacionadas)
+                </li>
+                <li>
+                  <strong>Almacenamiento:</strong> Google Cloud Storage + Multer
+                </li>
+                <li><strong>Procesamiento de Imágenes:</strong> Sharp</li>
+                <li>
+                  <strong>Autenticación:</strong> bcryptjs + express-session
+                </li>
+                <li><strong>Validación:</strong> Joi</li>
+                <li><strong>Emails:</strong> Nodemailer + Resend</li>
+                <li><strong>Tareas Programadas:</strong> node-cron</li>
+                <li><strong>Template Engine:</strong> Handlebars (HBS)</li>
+                <li><strong>Variables de Entorno:</strong> dotenv</li>
+                <li><strong>Logging:</strong> Morgan + Debug</li>
+              </ul>
+            </div>
+          </details>
+        </article>
+
+        <!-- 3️⃣ NO COUNTRY (Julio 2024) -->
+        <article class="experience__card">
+          <header class="experience__card-header">
+            <span class="experience__card-date">Julio 2024</span>
+            <h3 class="experience__card-title">
+              Simulación laboral - Sistema de Gestión para Clínica de Salud
+            </h3>
+            <span class="experience__card-company"> No Country </span>
+          </header>
+
+          <p class="experience__card-summary">
+            Desarrollo de un sistema de gestión para una clínica de salud en un
+            equipo multidisciplinario.
+          </p>
+
+          <ul class="experience__card-highlights">
+            <li>Arquitectura Hexagonal (Puertos y Adaptadores)</li>
+            <li>Inyección de Dependencias para testing</li>
+            <li>API segura con JWT</li>
+            <li>Base de datos NoSQL con MongoDB</li>
+          </ul>
+
+          <details class="experience__card-details">
+            <summary class="experience__card-toggle">
+              Ver tecnologías utilizadas
+            </summary>
+            <div class="experience__card-tech">
+              <h4>Stack tecnológico</h4>
+              <ul>
+                <li><strong>Backend:</strong> Node.js + Fastify</li>
+                <li>
+                  <strong>Arquitectura:</strong> Hexagonal (Puertos y
+                  Adaptadores) con Inyección de Dependencia
+                </li>
+                <li><strong>Base de Datos:</strong> MongoDB con Prisma ORM</li>
+                <li><strong>Autenticación:</strong> JSON Web Tokens (JWT)</li>
+                <li><strong>Validación:</strong> Validatorjs</li>
+                <li><strong>Seguridad:</strong> CORS con @fastify/cors</li>
+                <li><strong>Variables de Entorno:</strong> dotenv</li>
+                <li>
+                  <strong>Calidad de Código:</strong> ESLint (Airbnb base style
+                  guide)
+                </li>
+                <li><strong>Frontend:</strong> React 18</li>
+                <li><strong>Manejo de Estado:</strong> Redux Toolkit</li>
+                <li><strong>Enrutamiento:</strong> React Router DOM v6</li>
+                <li><strong>Peticiones HTTP:</strong> Axios</li>
+                <li><strong>UI/UX:</strong> React Toastify + React Helmet</li>
+                <li><strong>Construcción:</strong> Vite</li>
+              </ul>
+            </div>
+          </details>
+        </article>
       </div>
     </section>
 
