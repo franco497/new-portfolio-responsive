@@ -349,34 +349,101 @@
     <section class="projects">
       <h2 class="projects__title" id="projects">Proyectos</h2>
       <div class="projects__container">
-        <div class="projects__project">
-          <a
-            href="https://sistema-tareas-recordatorios.netlify.app/"
-            class="projects__project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 class="projects__project-name">
-              App Tareas - Sistema de Gestión y Recordatorios
-            </h2>
-          </a>
-        </div>
-        <div class="projects__project">
-          <a
-            href="https://pagina-estatica-react.netlify.app/"
-            class="projects__project-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 class="projects__project-name">Página estática React</h2>
-          </a>
-        </div>
-        <div class="projects__project"></div>
-        <div class="projects__project"></div>
-        <div class="projects__project"></div>
-        <div class="projects__project"></div>
+        <!-- PROYECTO 1: App Tareas -->
+        <article class="project-card">
+          <div class="project-card__image">
+            <img
+              src="proyectos/app-tareas.png"
+              alt="Captura de App Tareas - Sistema de Gestión y Recordatorios"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">
+              App Tareas — Sistema de Gestión y Recordatorios
+            </h3>
+            <p class="project-card__description">
+              Aplicación web para la gestión de tareas, autenticación mediante
+              Magic Links y envío de recordatorios automáticos por correo
+              electrónico.
+            </p>
+            <ul class="project-card__stack">
+              <li>React</li>
+              <li>Vite</li>
+              <li>Supabase</li>
+              <li>PostgreSQL</li>
+              <li>Magic Links</li>
+              <li>Gmail API</li>
+              <li>Netlify Functions</li>
+              <li>Edge Functions</li>
+            </ul>
+            <div class="project-card__actions">
+              <a
+                href="https://sistema-tareas-recordatorios.netlify.app"
+                class="project-card__btn project-card__btn--primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver Demo
+              </a>
+              <a
+                href="https://github.com/franco497/App-tareas-react-supabase"
+                class="project-card__btn project-card__btn--secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROYECTO 2: Sueños Lúcidos -->
+        <article class="project-card">
+          <div class="project-card__image">
+            <img
+              src="proyectos/suenos-lucidos.png"
+              alt="Captura de Sueños Lúcidos - Sitio web con React"
+              loading="lazy"
+            />
+          </div>
+          <div class="project-card__content">
+            <h3 class="project-card__title">
+              Sueños Lúcidos — Sitio web con React
+            </h3>
+            <p class="project-card__description">
+              Sitio web informativo sobre sueños lúcidos, técnicas y
+              aprendizaje. Diseño responsive con controles de accesibilidad y
+              navegación fluida.
+            </p>
+            <ul class="project-card__stack">
+              <li>React</li>
+              <li>Vite</li>
+              <li>CSS3</li>
+            </ul>
+            <div class="project-card__actions">
+              <a
+                href="https://pagina-estatica-react.netlify.app"
+                class="project-card__btn project-card__btn--primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver Demo
+              </a>
+              <a
+                href="https://github.com/franco497/Pagina-estatica-react"
+                class="project-card__btn project-card__btn--secondary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
+
     <footer>
       <div class="footer-container">
         <div class="footer-content">
