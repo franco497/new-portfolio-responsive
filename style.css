@@ -30,14 +30,14 @@ label {
   align-items: center;
   container-type: inline-size;
   container-name: header;
-  position: fixed; /* ← CAMBIO: antes era relative */
+  position: fixed; 
   top: 0;
   left: 0;
   right: 0;
   font-size: 20px;
   text-align: center;
-  z-index: 1000; /* ← CAMBIO: antes era 10 */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* ← NUEVO */
+  z-index: 1000; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* Botón hamburguesa estilo tres líneas */
@@ -192,7 +192,7 @@ html {
 
 @media screen and (min-width: 681px) {
   .profile {
-    padding-top: 0px !important; /* Ajustá este valor según la altura del header */
+    padding-top: 70px !important; 
   }
 }
 
@@ -276,7 +276,12 @@ html {
 @media screen and (min-width: 681px) and (min-height: 500px) {
   .header {
     font-size: 20px;
-    position: relative;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
 
   .header__nav {
@@ -319,7 +324,7 @@ html {
 .profile {
   container-name: profile;
   container-type: inline-size;
-  padding-top: 75px; /* ← Ajustá este valor */
+  padding-top: 75px; 
 }
 
 .profile__wrapper {
@@ -764,9 +769,7 @@ h2 {
   background-size: cover;
   display: grid;
   place-content: center;
-  /* Eliminamos altura fija para que sea flexible */
-  /* min-height: 88px; */ /* Altura mínima para mantener consistencia */
-  height: 88px; /* Altura fija para igualdad */
+  height: 88px; 
 }
 
 .downloadable__certificates:hover {
