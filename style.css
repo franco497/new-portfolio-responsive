@@ -190,9 +190,17 @@ html {
   }
 }
 
+@media screen and (min-width: 681px) {
+  .profile {
+    padding-top: 0px !important; /* Ajustá este valor según la altura del header */
+  }
+}
+
 /* ============================================
    HEADER - MEDIA QUERIES CORREGIDAS
    ============================================ */
+
+/*parche para vistas horizontales*/
 
 @media (max-height: 500px) and (orientation: landscape) {
   /* El header es fijo */
@@ -263,6 +271,7 @@ html {
   }
 }
 
+/*parche para vistas horizontales*/
 /* Desktop: ancho > 681px Y altura > 500px → Menú horizontal */
 @media screen and (min-width: 681px) and (min-height: 500px) {
   .header {
