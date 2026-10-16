@@ -215,7 +215,7 @@ html {
 
   /* Compensar el header fijo en el body */
   body {
-    padding-top: 50px;
+    padding-top: 0px;
   }
 
   /* Compensar el header fijo en el scroll */
@@ -224,7 +224,7 @@ html {
   }
 
   html {
-    scroll-padding-top: 60px;
+    scroll-padding-top: 60px !important;
   }
 
   /* Ajustar el logo */
